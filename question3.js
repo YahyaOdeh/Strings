@@ -17,6 +17,10 @@ const oldEmails = ["a@saweyyan.com","b@saweyyan.com","c@saweyyan.com"]
 
 function formIsValid(name,email,oldEmails,password,age)
 {
+
+
+
+
         
 if(nameIsValid(name) && emailIsValid(email,oldEmails) && passIsValid(password) && ageIsValid(age)){
 
@@ -24,7 +28,22 @@ if(nameIsValid(name) && emailIsValid(email,oldEmails) && passIsValid(password) &
 
 }
 
-else return (isValid = false);
+else if(nameIsValid(name)!=true){
+
+    console.log("Enter a Valid name ( if not Arabic )")
+}
+else if(emailIsValid(email,oldEmails)!=true){
+
+    console.log("Enter a Valid Email")
+}
+else if(passIsValid(password)!=true){
+
+    console.log("Enter a Valid name ( if not Arabic )")
+}
+else if(ageIsValid(age)!=true){
+
+    console.log("Enter a Age in numbers or leave it blank")
+}
 
 }
 
