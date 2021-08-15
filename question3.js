@@ -28,19 +28,19 @@ if(nameIsValid(name) && emailIsValid(email,oldEmails) && passIsValid(password) &
 
 }
 
-else if(nameIsValid(name)!=true){
+else if(nameIsValid(name)!==true){
 
     console.log("Enter a Valid name ( if not Arabic )")
 }
-else if(emailIsValid(email,oldEmails)!=true){
+else if(emailIsValid(email,oldEmails)!==true){
 
     console.log("Enter a Valid Email")
 }
-else if(passIsValid(password)!=true){
+else if(passIsValid(password)!==true){
 
     console.log("Enter a Valid name ( if not Arabic )")
 }
-else if(ageIsValid(age)!=true){
+else if(ageIsValid(age)!==true){
 
     console.log("Enter a Age in numbers or leave it blank")
 }
@@ -54,7 +54,7 @@ function emailIsValid(email,oldEmails)
 
     temp2 = email.split("@",1);
   
-    if((email.match(oldEmails)!=true) && email.includes("@",(t-1)) && ( temp2 > 1) && (temp2 < 8)){
+    if((email.match(oldEmails)!==true) && email.includes("@",(t-1)) && ( temp2 > 1) && (temp2 < 8)){
 
         return (isValid = true);
     }
